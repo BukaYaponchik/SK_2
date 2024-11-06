@@ -1,4 +1,4 @@
-public class Bicycle implements Vehicle{
+public class Bicycle implements Vehicle {
     private String modelName;
     private int wheelsCount;
 
@@ -15,19 +15,17 @@ public class Bicycle implements Vehicle{
         this.wheelsCount = wheelsCount;
     }
 
-    @Override
     public String getModelName() {
         return modelName;
     }
 
-    @Override
     public int getWheelsCount() {
         return wheelsCount;
     }
 
     @Override
     public void updateTyre() {
-        System.out.println("Меняем покрышку на велосипеде " + modelName);
+        System.out.println("Меняем покрышку на транспорте " + modelName);
     }
 
     @Override
