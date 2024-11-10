@@ -1,5 +1,5 @@
 public class ServiceStation {
-    public void check(Bicycle vehicle) {
+    public void check(Transport vehicle) {
         if (vehicle != null) {
             System.out.println("Обслуживаем " + vehicle.getModelName());
             for (int i = 0; i < vehicle.getWheelsCount(); i++) {
@@ -8,7 +8,7 @@ public class ServiceStation {
             vehicle.checkEngine();
 
             // Проверяем прицеп только для грузовиков
-            if (vehicle instanceof Truck) {
+            if (Truck.class == vehicle.getClass()) {
                 ((Truck) vehicle).checkTrailer();
             }
         } else {
